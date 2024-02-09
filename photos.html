@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .photo {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+        @media only screen and (max-width: 768px) {
+            .photo {
+                width: 45%;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .photo {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Photos</h1>
+    <div class="container">
+        <div class="photo">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="photo">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="photo">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+</body>
+</html>
